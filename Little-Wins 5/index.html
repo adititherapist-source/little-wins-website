@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Wins — Supporting Children. Empowering Families.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+═══════════════════════════════════════ -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <img src="images/logo.png" alt="Little Wins Logo" style="height:96px; width:auto; display:block;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#approach">Our Approach</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li><a href="#contact" class="nav-cta">Book a Session</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- WALKING STRIP -->
+<div class="turtle-strip">
+  <svg width="100%" viewBox="0 0 1000 64" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <style>
+      .walkers { animation: walkacross 14s linear infinite; }
+      @keyframes walkacross {
+        0%   { transform: translateX(-100px); opacity:1; }
+        87%  { transform: translateX(1080px); opacity:1; }
+        88%  { transform: translateX(1080px); opacity:0; }
+        99%  { transform: translateX(-100px); opacity:0; }
+        100% { transform: translateX(-100px); opacity:1; }
+      }
+      .adult-body { animation: abob 0.5s ease-in-out infinite alternate; }
+      @keyframes abob { from { transform:translateY(0); } to { transform:translateY(-2px); } }
+      .child-body { animation: cbob 0.5s ease-in-out infinite alternate; animation-delay:0.08s; }
+      @keyframes cbob { from { transform:translateY(0); } to { transform:translateY(-3px); } }
+      .al-l { transform-origin: 28px 42px; animation: alL 0.5s ease-in-out infinite alternate; }
+      .al-r { transform-origin: 34px 42px; animation: alR 0.5s ease-in-out infinite alternate; }
+      @keyframes alL { from { transform:rotate(-24deg); } to { transform:rotate(24deg); } }
+      @keyframes alR { from { transform:rotate(24deg);  } to { transform:rotate(-24deg); } }
+      .aa-l { transform-origin: 20px 28px; animation: aaL 0.5s ease-in-out infinite alternate; }
+      @keyframes aaL { from { transform:rotate(-16deg); } to { transform:rotate(16deg); } }
+      .cl-l { transform-origin: 50px 44px; animation: clL 0.5s ease-in-out infinite alternate; }
+      .cl-r { transform-origin: 57px 44px; animation: clR 0.5s ease-in-out infinite alternate; }
+      @keyframes clL { from { transform:rotate(-28deg); } to { transform:rotate(28deg); } }
+      @keyframes clR { from { transform:rotate(28deg);  } to { transform:rotate(-28deg); } }
+      .star-p { transform-origin: 966px 26px; animation: starpop 1.6s ease-in-out infinite alternate; }
+      @keyframes starpop { from { transform:scale(0.88); } to { transform:scale(1.18); } }
+      .strip-label {
+        font-family: "Nunito", sans-serif;
+        font-size: 8.5px; font-weight: 800;
+        fill: #1a8e8e; opacity: 0.28;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      .sdot { fill:#1a8e8e; opacity:0.18; }
+    </style>
+    <rect width="1000" height="64" fill="#e8f7f7"/>
+    <text x="500" y="59" text-anchor="middle" class="strip-label">supporting children · empowering families · · · · · · · · · · · · · · · · · · · · · · ·</text>
+    <circle cx="60"  cy="46" r="2" class="sdot"/><circle cx="130" cy="46" r="2" class="sdot"/>
+    <circle cx="200" cy="46" r="2" class="sdot"/><circle cx="270" cy="46" r="2" class="sdot"/>
+    <circle cx="340" cy="46" r="2" class="sdot"/><circle cx="410" cy="46" r="2" class="sdot"/>
+    <circle cx="480" cy="46" r="2" class="sdot"/><circle cx="550" cy="46" r="2" class="sdot"/>
+    <circle cx="620" cy="46" r="2" class="sdot"/><circle cx="690" cy="46" r="2" class="sdot"/>
+    <circle cx="760" cy="46" r="2" class="sdot"/><circle cx="830" cy="46" r="2" class="sdot"/>
+    <circle cx="900" cy="46" r="2" class="sdot"/>
+    <g class="star-p">
+      <polygon points="966,11 970,23 983,23 973,30 977,42 966,35 955,42 959,30 949,23 962,23" fill="#f5a623" opacity="0.95"/>
+    </g>
+    <g class="walkers">
+      <g class="adult-body">
+        <line class="al-l" x1="28" y1="42" x2="21" y2="58" stroke="#0f6e6e" stroke-width="3.5" stroke-linecap="round"/>
+        <line class="al-r" x1="34" y1="42" x2="41" y2="58" stroke="#0f6e6e" stroke-width="3.5" stroke-linecap="round"/>
+        <line class="aa-l" x1="20" y1="28" x2="12" y2="40" stroke="#1a8e8e" stroke-width="3" stroke-linecap="round"/>
+        <line x1="40" y1="28" x2="47" y2="37" stroke="#1a8e8e" stroke-width="3" stroke-linecap="round"/>
+        <rect x="19" y="25" width="22" height="19" rx="6" fill="#1a8e8e"/>
+        <circle cx="30" cy="16" r="10" fill="#1a8e8e"/>
+        <circle cx="27" cy="14" r="2" fill="#0f6e6e"/>
+        <circle cx="33" cy="14" r="2" fill="#0f6e6e"/>
+        <ellipse cx="27" cy="13.2" rx="0.9" ry="0.7" fill="white" opacity="0.75"/>
+        <ellipse cx="33" cy="13.2" rx="0.9" ry="0.7" fill="white" opacity="0.75"/>
+        <path d="M27 18 Q30 21 33 18" stroke="#0f6e6e" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <path d="M24 7 Q30 4 36 7" stroke="#0f6e6e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      </g>
+      <g class="child-body">
+        <line class="cl-l" x1="50" y1="44" x2="44" y2="58" stroke="#d4861c" stroke-width="3" stroke-linecap="round"/>
+        <line class="cl-r" x1="57" y1="44" x2="63" y2="58" stroke="#d4861c" stroke-width="3" stroke-linecap="round"/>
+        <line x1="60" y1="31" x2="66" y2="40" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="44" y="29" width="18" height="17" rx="5" fill="#f5a623"/>
+        <circle cx="53" cy="21" r="9" fill="#f5a623"/>
+        <circle cx="50" cy="19" r="1.8" fill="#d4861c"/>
+        <circle cx="56" cy="19" r="1.8" fill="#d4861c"/>
+        <ellipse cx="50" cy="18.4" rx="0.8" ry="0.6" fill="white" opacity="0.75"/>
+        <ellipse cx="56" cy="18.4" rx="0.8" ry="0.6" fill="white" opacity="0.75"/>
+        <path d="M50 23 Q53 25.5 56 23" stroke="#d4861c" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+        <path d="M47 14 Q53 11 59 14" stroke="#d4861c" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </g>
+      <line x1="41" y1="36" x2="47" y2="33" stroke="#3a7d44" stroke-width="2.8" stroke-linecap="round"/>
+      <circle cx="41" cy="36" r="2.5" fill="#3a7d44" opacity="0.7"/>
+      <circle cx="47" cy="33" r="2.5" fill="#3a7d44" opacity="0.7"/>
+    </g>
+  </svg>
+</div>
+
+<div class="mobile-menu"<div class="mobile-menu" id="mobile-menu">
+  <a href="#about"    class="mob-link">About</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#approach" class="mob-link">Our Approach</a>
+  <a href="#gallery"  class="mob-link">Gallery</a>
+  <a href="#faq"      class="mob-link">FAQs</a>
+  <a href="#contact"  class="nav-cta mob-link">Book a Session</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-shape"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">✨ Supporting Children. Empowering Families.</div>
+    <h1>
+      Every child deserves to <span class="highlight">grow</span>
+      at their own <span class="highlight2">pace</span>
+    </h1>
+    <p class="hero-tagline">
+      At Little Wins, we provide child-centered, evidence-based therapy for
+      children aged 2–21 years — blending behavioural science with creativity,
+      play, and compassion.
+    </p>
+    <div class="hero-services">
+      <span class="service-pill">🧠 Developmental Services</span>
+      <span class="service-pill">⭐ Behaviour Therapy</span>
+      <span class="service-pill">💚 Mental Health Counseling</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Book a Free Consult</a>
+      <a href="#services" class="btn-secondary">Our Services</a>
+    </div>
+  </div>
+
+  <div class="hero-image-side">
+    <div class="hero-img-blob">
+      <img src="images/hero.png"
+           alt="Child therapist giving a high five to a child during therapy session">
+      <div class="hero-float-card card-ages">
+        <span class="float-number">2–21</span>
+        <span class="float-label">Years Supported</span>
+      </div>
+      <div class="hero-float-card card-loc">
+        <span class="float-number">🌍</span>
+        <span class="float-label">Mumbai &amp; Online Globally</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
+  </svg>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section class="section section-alt" id="about">
+  <div class="section-tag reveal">About Us</div>
+  <h2 class="section-title reveal" style="animation-delay:0.08s">
+    Meet the <em>founder</em> behind Little Wins
+  </h2>
+  <p class="section-intro reveal" style="animation-delay:0.16s">
+    Inspired by the turtle — calm, steady, and consistent in its journey —
+    we believe lasting growth is built one small step at a time.
+  </p>
+
+  <div class="about-grid">
+
+    <div class="about-founder-card reveal-left">
+      <img src="images/aditi.jpg"
+           alt="Aditi Bhansali, Founder of Little Wins"
+           class="founder-photo"
+           style="object-fit:cover; object-position:center top;">
+      <div class="founder-name">Aditi Bhansali</div>
+      <div class="founder-title">Founder &amp; Clinical Lead, Little Wins</div>
+      <p class="founder-bio">
+        After completing my Master's in Clinical Psychology from University
+        College London (UCL) and earning my certification as an International
+        Behaviour Analyst, I've worked across the UK, UAE and India helping
+        children and families build meaningful life skills through
+        evidence-based and compassionate care.
+      </p>
+      <p class="founder-bio" style="margin-top:0.8rem;">
+        I use a thoughtful blend of ABA, CBT, and ACT to support children
+        with developmental needs, autism, ADHD, emotional wellbeing, and
+        social skills.
+      </p>
+      <div class="founder-creds">
+        <span class="cred-badge">MSc. Clinical Psychology, UCL</span>
+        <span class="cred-badge">IBAO Certified</span>
+        <span class="cred-badge">International Behaviour Analyst</span>
+        <span class="cred-badge">UK · UAE · India</span>
+        <img src="images/IBAcertificate.jpeg" alt="IBA International Behavior Analyst IBAO Certified Badge"
+             style="height:64px; width:auto; margin-top:0.6rem; border-radius:8px; display:block;">
+      </div>
+    </div>
+
+    <div class="about-content reveal-right">
+      <h3 style="font-family:'Poppins',sans-serif; font-weight:800; font-size:1.3rem; color:var(--text-dark); margin-bottom:1rem;">
+        Why Little <span style="color:var(--orange);">Wins?</span>
+      </h3>
+      <p style="color:var(--text-mid); font-size:0.97rem; line-height:1.7; margin-bottom:1.2rem;">
+        My little learning at work has been realizing that growth often
+        reveals itself in small, everyday moments — a child finding the
+        courage to try again, or a shy child starting a conversation with
+        a peer for the first time.
+      </p>
+      <p style="color:var(--text-mid); font-size:0.97rem; line-height:1.7; margin-bottom:1.5rem;">
+        This belief shapes our vision at Little Wins. We combine behavioural
+        science with creativity, play, and collaboration to create
+        personalized goals for every child and track progress systematically.
+      </p>
+      <div class="about-values">
+        <div class="value-card">
+          <span class="value-icon">🐢</span>
+          <div class="value-title">Child-Centered Growth</div>
+          <div class="value-desc">We meet each child where they are, at their own pace.</div>
+        </div>
+        <div class="value-card orange">
+          <span class="value-icon">👨‍👩‍👧</span>
+          <div class="value-title">Family &amp; Professional Collaboration</div>
+          <div class="value-desc">We collaborate closely with families, schools, educators, and other professionals to create consistent, meaningful support across environments.</div>
+        </div>
+        <div class="value-card green">
+          <span class="value-icon">🌱</span>
+          <div class="value-title">Holistic Support</div>
+          <div class="value-desc">Growth includes resilience, confidence, and emotional wellbeing.</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🔬</span>
+          <div class="value-title">Evidence-Based</div>
+          <div class="value-desc">Every approach is grounded in the latest research and science.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wave-divider section-wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+    <path d="M0,20 C360,55 720,0 1080,35 C1260,52 1380,10 1440,20 L1440,60 L0,60 Z"
+          fill="var(--cream)"/>
+  </svg>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════ -->
+<section class="section" id="services">
+  <div class="section-tag orange reveal">Our Services</div>
+  <h2 class="section-title reveal" style="animation-delay:0.08s">
+    Comprehensive care for <em>every child</em>
+  </h2>
+  <p class="section-intro reveal" style="animation-delay:0.16s">
+    We support children and young people aged 2–21 years with a wide range
+    of evidence-based services, delivered in-person in Mumbai and online globally.
+  </p>
+
+  <div class="services-grid stagger-children">
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">🧩</div>
+      <div class="service-name">Personalised Individual &amp; Group Support</div>
+      <p class="service-desc">Personalised one-on-one sessions and group settings to develop skills, confidence, and meaningful connections with peers.</p>
+    </div>
+    <div class="service-card orange reveal">
+      <div class="service-icon-wrap orange">🏡</div>
+      <div class="service-name">Community-Based &amp; Real-World Skill Practice</div>
+      <p class="service-desc">Going beyond the clinic to practice skills in real environments — building independence in the places that matter most.</p>
+    </div>
+    <div class="service-card green reveal">
+      <div class="service-icon-wrap green">👪</div>
+      <div class="service-name">Parent &amp; Caregiver Guidance</div>
+      <p class="service-desc">Empowering families with tools, strategies, and support to extend learning at home, in school, and everyday life.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">📚</div>
+      <div class="service-name">School Readiness &amp; Learning Support</div>
+      <p class="service-desc">Helping children develop the everyday skills that support confidence and success in school settings, including attention, following routines, group participation, communication, independence, and readiness for learning.</p>
+    </div>
+    <div class="service-card orange reveal">
+      <div class="service-icon-wrap orange">🎭</div>
+      <div class="service-name">Play-Based Early Intervention</div>
+      <p class="service-desc">Using play as a natural language for children to express feelings, develop social skills, and build self-esteem safely.</p>
+    </div>
+    <div class="service-card green reveal">
+      <div class="service-icon-wrap green">🏫</div>
+      <div class="service-name">Professional Development Workshops</div>
+      <p class="service-desc">Workshops for educators and stakeholders to build understanding and create consistent, inclusive environments for children.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     OUR APPROACH
+═══════════════════════════════════════ -->
+<section class="section section-alt" id="approach">
+  <div class="section-tag reveal">Our Approach</div>
+  <h2 class="section-title reveal" style="animation-delay:0.08s">
+    An <em>integrated care</em> model
+  </h2>
+  <p class="section-intro reveal" style="animation-delay:0.16s">
+    We blend three powerful, evidence-based frameworks so every child
+    receives the most holistic, effective support possible.
+  </p>
+
+  <div class="approach-grid stagger-children">
+    <div class="approach-card reveal">
+      <div class="approach-num" style="color:rgba(26,142,142,0.2)">ABA</div>
+      <div class="approach-title" style="color:var(--teal-dark)">Applied Behaviour Analysis</div>
+      <p class="approach-desc">Increases helpful behaviours, builds everyday skills step-by-step, and uses systematic behaviour tracking to guide decisions.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:1rem; justify-content:center;">
+        <span style="background:var(--teal-light); color:var(--teal-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Reinforcement</span>
+        <span style="background:var(--teal-light); color:var(--teal-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Skill Building</span>
+        <span style="background:var(--teal-light); color:var(--teal-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Behaviour Tracking</span>
+      </div>
+    </div>
+    <div class="approach-card reveal" style="border-color:var(--orange-light)">
+      <div class="approach-num" style="color:rgba(245,166,35,0.25)">CBT</div>
+      <div class="approach-title" style="color:var(--orange-dark)">Cognitive Behaviour Therapy</div>
+      <p class="approach-desc">Helps children identify unhelpful thoughts, develop positive behaviours, and cope with their feelings in healthy, lasting ways.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:1rem; justify-content:center;">
+        <span style="background:var(--orange-light); color:var(--orange-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Thoughts</span>
+        <span style="background:var(--orange-light); color:var(--orange-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Behaviours</span>
+        <span style="background:var(--orange-light); color:var(--orange-dark); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Emotions</span>
+      </div>
+    </div>
+    <div class="approach-card reveal" style="border-color:var(--green-light)">
+      <div class="approach-num" style="color:rgba(58,125,68,0.2)">ACT</div>
+      <div class="approach-title" style="color:var(--green)">Acceptance &amp; Commitment Therapy</div>
+      <p class="approach-desc">Teaches children mindfulness, acceptance of emotions, and how to make choices aligned with their personal values.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:1rem; justify-content:center;">
+        <span style="background:var(--green-light); color:var(--green); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Mindfulness</span>
+        <span style="background:var(--green-light); color:var(--green); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Acceptance</span>
+        <span style="background:var(--green-light); color:var(--green); font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:50px;">Values</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════ -->
+<section class="gallery-section" id="gallery">
+  <div class="section-tag green reveal">Gallery</div>
+  <h2 class="section-title reveal" style="animation-delay:0.08s">Life at <em>Little Wins</em></h2>
+  <p class="section-intro reveal" style="animation-delay:0.16s">
+    Real moments from our outreach work — school workshops, cooking sessions,
+    grocery shopping, treks, and more.
+  </p>
+
+  <div class="gallery-masonry stagger-children">
+
+    <div class="gal-item reveal">
+      <img src="images/school1.jpg" alt="Aditi presenting at Podar school workshop">
+      <div class="gal-label">🏫 School Workshop</div>
+    </div>
+
+    <div class="gal-item tall reveal">
+      <img src="images/shopping1.jpg" alt="Child learning grocery shopping skills">
+      <div class="gal-label">🛒 Grocery Shopping Skills</div>
+    </div>
+
+    <div class="gal-item reveal">
+      <img src="images/school2.jpg" alt="Aditi presenting to older students at Podar school">
+      <div class="gal-label">🏫 School Outreach</div>
+    </div>
+
+    <div class="gal-item reveal">
+      <img src="images/cooking1.jpg" alt="Children learning cooking skills">
+      <div class="gal-label">👨‍🍳 Cooking Workshop</div>
+    </div>
+
+    <div class="gal-item tall reveal">
+      <img src="images/trekking.jpg" alt="Children on a nature trek">
+      <div class="gal-label">🥾 Nature Trek</div>
+    </div>
+
+    <div class="gal-item reveal">
+      <img src="images/cooking2.jpg" alt="Children cooking together">
+      <div class="gal-label">🍳 Life Skills Cooking</div>
+    </div>
+
+    <div class="gal-item reveal">
+      <img src="images/supermarket.jpg" alt="Community-based skill practice">
+      <div class="gal-label">🌍 Community Skills</div>
+    </div>
+
+    <div class="gal-item reveal">
+      <img src="images/workshop1.jpg" alt="Workshop session with children">
+      <div class="gal-label">✨ Group Workshop</div>
+    </div>
+
+  </div>
+
+  <p style="margin-top:2rem; font-size:0.88rem; color:var(--text-light); text-align:center;">
+    📸 Follow us on Instagram
+    <a href="https://instagram.com/littlewinscenter"
+       style="color:var(--teal); font-weight:700;">@littlewinscenter</a>
+    for more moments
+  </p>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FAQ
+═══════════════════════════════════════ -->
+<section class="section section-alt" id="faq">
+  <div class="section-tag reveal">Common Questions</div>
+  <h2 class="section-title reveal" style="animation-delay:0.08s">
+    Questions families <em>often ask</em>
+  </h2>
+  <p class="section-intro reveal" style="animation-delay:0.16s">
+    We want you to feel confident before you begin. Here are answers to
+    the questions we hear most.
+  </p>
+
+  <div class="faq-grid stagger-children">
+
+    <div class="faq-item reveal open">
+      <div class="faq-q">My child is hesitant about therapy — what makes your approach different?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">At Little Wins, we prioritize building trust and connection before expecting change. We meet children where they are, creating a space that feels safe, supportive, judgement-free (and fun!). By blending science with play, we help children feel understood, empowered, and motivated — at their own pace.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">What happens in a typical therapy session?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Sessions are structured yet flexible, blending play, creativity, and evidence-based activities tailored to your child's goals. Some sessions focus on 1:1 skill-building, while others may involve practicing skills in the community. Every session is designed around your child's comfort level.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">How do I know what approach will work for my child?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Every child is unique — there's no one-size-fits-all approach. Our therapists begin with a thorough assessment to understand your child's strengths, needs, and family context. From there, we design an individualized plan using evidence-based strategies through our integrated care model.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">What role does motivation play in my child's learning?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Every child is guided by their own interests and motivations. Our child-centred approach means we take time to understand what truly motivates each child and family. By weaving these motivations into therapy, we create a space where children feel seen, engaged, and willing to try.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">What is my role as a parent or caregiver?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">While we guide the therapeutic approach, families are always active collaborators. Through ongoing guidance, training, and collaboration, we support families in extending learning beyond sessions — so progress continues at home, in school, and in everyday life.</div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">Do you offer online sessions?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes! We are available in-person in Mumbai and online globally. Our online sessions are just as engaging and effective, ensuring families worldwide can access quality behavioural health support from the comfort of their home.</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+
+    <div class="contact-left">
+      <div class="section-tag reveal" style="background:var(--orange);">Get In Touch</div>
+      <h2 class="section-title reveal" style="animation-delay:0.08s">
+        Ready to take the <em style="color:var(--orange);">first step?</em>
+      </h2>
+      <p class="section-intro reveal" style="animation-delay:0.16s">
+        Every big journey starts with a small step. Reach out today and
+        let's explore how we can support your child's growth together.
+      </p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <span class="contact-label">Phone / WhatsApp</span>
+            <span class="contact-value">+91 99202 15029</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">Aditi.therapist@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">In-Person in Mumbai &amp; Online Globally</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📸</div>
+          <div>
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@littlewinscenter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal-right">
+      <div class="form-title">Send us a message 💬</div>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="f-name" placeholder="e.g. Priya Sharma">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="f-email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label>Child's Age</label>
+        <select id="f-age">
+          <option value="">Select age range</option>
+          <option>2–5 years</option>
+          <option>6–10 years</option>
+          <option>11–15 years</option>
+          <option>16–21 years</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>How can we help?</label>
+        <textarea id="f-msg" placeholder="Tell us a little about what you're looking for..."></textarea>
+      </div>
+      <button class="form-submit" id="wa-submit">💬 Send via WhatsApp</button>
+      <p style="text-align:center; font-size:0.8rem; color:var(--text-light); margin-top:0.8rem;">
+        You'll be taken to WhatsApp with your message pre-filled.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <a href="#home" style="display:flex; align-items:center; text-decoration:none;">
+    <img src="images/logo.png"
+         alt="Little Wins" style="height:70px; width:auto;">
+  </a>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-credit">© 2025 Little Wins · Supporting Children. Empowering Families.</div>
+</footer>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919920215029" target="_blank" title="Chat on WhatsApp"
+   style="position:fixed; bottom:24px; right:24px; z-index:200; background:#25D366;
+          color:#fff; width:58px; height:58px; border-radius:50%; display:flex;
+          align-items:center; justify-content:center; font-size:1.6rem;
+          box-shadow:0 4px 20px rgba(37,211,102,0.4); text-decoration:none;
+          transition:transform 0.2s, box-shadow 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 6px 28px rgba(37,211,102,0.5)'"
+   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 20px rgba(37,211,102,0.4)'">
+  💬
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
